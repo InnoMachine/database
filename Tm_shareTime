@@ -26,13 +26,6 @@ create table invitation
  send_time date not null
 );
 
-create table schedule
-{id int unsighed not null primary key,
- startTime char(50),
- endTime char(50),
- activityid int unsigned not null
-
-}
 
 
 grant select,insert,update,delete,index,alter,create
