@@ -27,7 +27,6 @@ create table invitation
 );
 
 
-
 grant select,insert,update,delete,index,alter,create
       on shareTime.*
       to 'Turingmachine'
