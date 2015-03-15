@@ -18,13 +18,22 @@ create table activity
 
 );
 
-create table invatation
+create table invitation
 (id int unsigned not null auto_increment primary key,
  sender_id int unsigned not null,
  receiver_id char(200),
  content text,
  send_time date not null
 );
+
+create table schedule
+{id int unsighed not null primary key,
+ startTime char(50),
+ endTime char(50),
+ activityid int unsigned not null
+
+}
+
 
 grant select,insert,update,delete,index,alter,create
       on shareTime.*
