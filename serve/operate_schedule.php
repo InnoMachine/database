@@ -13,7 +13,7 @@ switch($order){
         $stime=$_POST['stime'];
         $length=$_POST['length'];
         $name=$_POST['name'];
-       echo getSchedule($name,$stime,$length);
+        echo getSchedule($name,$stime,$length);
         break;
     case 'set activity'://这里set activity 包括了增加，删除活动和设置有空，只是活动id不一样 分别为 非0和1；0；1.
         $stime=$_POST['stime'];

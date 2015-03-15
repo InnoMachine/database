@@ -8,7 +8,8 @@
  */
 require_once('databaseConnection.php');
 $db=getDb();
-$stime='2015-3-5 8:0:0';
+$date=$_POST['date'];
+$stime=$date.' 8:0:0';
 echo nextTime($stime);
 while(nextTime($stime)!="#") {
    // insert($stime, nextTime($stime), 'lxy_1');

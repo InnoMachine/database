@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: hello
- * Date: 2015/2/22
- * Time: 17:32
- */
 require_once('databaseConnection.php');
 require_once('userInf.php');
 require_once('contacts.php');

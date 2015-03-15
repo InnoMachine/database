@@ -9,9 +9,9 @@
 require_once('databaseConnection.php');
 $db=getDb();
 echo getInfOfActivity(9);
-function newActivity($context,$contacts){
+function newActivity($contex,$contacts){
     global $db;
-    $query="insert into activity values(0,'".$context."','".$contacts."')";
+    $query="insert into activity values(0,'".$contex."','".$contacts."')";
     $db->query($query);
 }
 //设置参与人员

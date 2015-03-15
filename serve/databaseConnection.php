@@ -15,6 +15,4 @@ function getDb(){
     return $db;
 }
 
-getDb();
-
 ?>
