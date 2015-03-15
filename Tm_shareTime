@@ -5,12 +5,14 @@ use shareTime;
 create table user
 (id int unsigned not null auto_increment primary key,
  name char(16) not null,
- photo longblob not null,
+ photo char(60) ,
  phone varchar(13) not null,
  password char(40) not null,
- contacts char(200) not null
 );
-
+create table contacts
+(user1 int  not null,
+user2 int  not null,
+root int not null default 0 );
 create table activity
 (id int unsigned not null auto_increment primary key,
  content text,
